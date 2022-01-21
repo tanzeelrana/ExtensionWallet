@@ -1,4 +1,5 @@
 import {
+  IonBadge,
   IonContent,
   IonIcon,
   IonItem,
@@ -19,6 +20,8 @@ interface AppPage {
   iosIcon: string;
   mdIcon: string;
   title: string;
+  badgeColor?: string;
+  badgeValue?: string;
 }
 
 const appPages: AppPage[] = [
@@ -26,37 +29,49 @@ const appPages: AppPage[] = [
     title: 'Inbox',
     url: '/page/Inbox',
     iosIcon: mailOutline,
-    mdIcon: mailSharp
+    mdIcon: mailSharp,
+    badgeColor: 'primary',
+    badgeValue: '1k'
   },
   {
     title: 'Outbox',
     url: '/page/Outbox',
     iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
+    mdIcon: paperPlaneSharp,
+    badgeColor: 'secondary',
+    badgeValue: '2k'
   },
   {
     title: 'Favorites',
     url: '/page/Favorites',
     iosIcon: heartOutline,
-    mdIcon: heartSharp
+    mdIcon: heartSharp,
+    badgeColor: 'tertiary',
+    badgeValue: '5k'
   },
   {
     title: 'Archived',
     url: '/page/Archived',
     iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    mdIcon: archiveSharp,
+    badgeColor: 'success',
+    badgeValue: '1k'
   },
   {
     title: 'Trash',
     url: '/page/Trash',
     iosIcon: trashOutline,
-    mdIcon: trashSharp
+    mdIcon: trashSharp,
+    badgeColor: 'warning',
+    badgeValue: '50k'
   },
   {
     title: 'Spam',
     url: '/page/Spam',
     iosIcon: warningOutline,
-    mdIcon: warningSharp
+    mdIcon: warningSharp,
+    badgeColor: 'danger',
+    badgeValue: '100k'
   }
 ];
 
@@ -77,6 +92,7 @@ const Menu: React.FC = () => {
                 <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
                   <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
                   <IonLabel>{appPage.title}</IonLabel>
+                  <IonBadge color={appPage.badgeColor}>{appPage.badgeValue}</IonBadge>
                 </IonItem>
               </IonMenuToggle>
             );
