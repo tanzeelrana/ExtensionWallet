@@ -4,27 +4,18 @@ import {
   IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
-  IonCardTitle,
-  IonCol,
   IonContent,
-  IonGrid,
   IonHeader,
   IonIcon,
   IonInput,
-  IonItem,
   IonLabel,
   IonPage,
-  IonRow,
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
 
-import { arrowForward, closeCircleSharp, playForward, } from 'ionicons/icons';
+import { arrowForward, closeCircleSharp, } from 'ionicons/icons';
 import './CreateAccount.css';
-
-
-
-
 
 const CreateAccount: React.FC = () => {
 
@@ -32,8 +23,8 @@ const CreateAccount: React.FC = () => {
     <IonPage>
       <IonHeader translucent>
         <IonToolbar >
-            <IonTitle >Create NEAR account</IonTitle>
-            <IonIcon size='large' slot='end' icon={closeCircleSharp}></IonIcon>
+          <IonTitle >Create NEAR account</IonTitle>
+          <IonIcon size='large' slot='end' icon={closeCircleSharp}></IonIcon>
         </IonToolbar>
       </IonHeader>
       <IonContent>
