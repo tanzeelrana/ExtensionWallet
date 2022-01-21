@@ -37,10 +37,10 @@ const CreateAccount: React.FC = () => {
           <IonCardContent>
 
             <IonLabel>FullName</IonLabel>
-            <IonInput placeholder='Ex. John doe' id="text" type='password'></IonInput>
+            <IonInput placeholder='Ex. John doe' id="text" type='text'></IonInput>
             <br />
             <IonLabel>Account ID</IonLabel>
-            <IonInput placeholder="yourname" id="text" type='password'></IonInput>
+            <IonInput placeholder="yourname" id="text" type='text'></IonInput>
             <br />
             <div className="center">
               <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>

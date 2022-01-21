@@ -24,23 +24,23 @@ const SecureAccount: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar >
-          <IonTitle className="center" >Create NEAR account</IonTitle>
+          <IonTitle className="center" >Secure your account</IonTitle>
           <IonIcon size='large' slot='end' icon={closeCircleSharp}></IonIcon>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonCard>
           <IonCardHeader>
-            <IonCardSubtitle>Enter an Account ID to use with your NEAR account. Your Account ID will be used for all NEAR operations, including sending and receiving assets.
+            <IonCardSubtitle>Keep your apps safe from other with access to your computer.
             </IonCardSubtitle>
           </IonCardHeader>
           <IonCardContent>
 
-            <IonLabel>FullName</IonLabel>
-            <IonInput placeholder='Ex. John doe' id="text" type='password'></IonInput>
+            <IonLabel>Password</IonLabel>
+            <IonInput  id="text" type='password'></IonInput>
             <br />
-            <IonLabel>Account ID</IonLabel>
-            <IonInput placeholder="yourname" id="text" type='password'></IonInput>
+            <IonLabel>Confirm Password</IonLabel>
+            <IonInput id="text" type='password'></IonInput>
             <br />
             <div className="center">
               <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>
