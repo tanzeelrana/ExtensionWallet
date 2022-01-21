@@ -22,6 +22,10 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import CreateAccount from './components/CreateAccount';
+import HomepageRegEmail from './components/Homepage-reg-email';
+import SecureAccount from './components/SecureAccount';
+import Verification from './components/Verification';
 
 setupIonicReact();
 
@@ -36,7 +40,19 @@ const App: React.FC = () => {
               <Redirect to="/page/Inbox" />
             </Route>
             <Route path="/page/:name" exact={true}>
-              <Page />
+              <HomepageRegEmail/>
+            </Route>
+            <Route path="/page/create-account" exact={true}>
+              <CreateAccount/>
+            </Route>
+            <Route path="/page/homepage-reg-email" exact={true}>
+              <HomepageRegEmail/>
+            </Route>
+            <Route path="/page/secure-account" exact={true}>
+              <SecureAccount/>
+            </Route>
+            <Route path="/page/verification" exact={true}>
+              <Verification/>
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

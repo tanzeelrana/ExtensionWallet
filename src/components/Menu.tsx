@@ -26,32 +26,32 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Inbox',
-    url: '/page/Inbox',
+    title: 'Create Account',
+    url: '/page/create-account',
     iosIcon: mailOutline,
     mdIcon: mailSharp,
     badgeColor: 'primary',
     badgeValue: '1k'
   },
   {
-    title: 'Outbox',
-    url: '/page/Outbox',
+    title: 'Homepage Reg Email',
+    url: '/page/homepage-reg-email',
     iosIcon: paperPlaneOutline,
     mdIcon: paperPlaneSharp,
     badgeColor: 'secondary',
     badgeValue: '2k'
   },
   {
-    title: 'Favorites',
-    url: '/page/Favorites',
+    title: 'Secure Account',
+    url: '/page/secure-account',
     iosIcon: heartOutline,
     mdIcon: heartSharp,
     badgeColor: 'tertiary',
     badgeValue: '5k'
   },
   {
-    title: 'Archived',
-    url: '/page/Archived',
+    title: 'Verification',
+    url: '/page/verification',
     iosIcon: archiveOutline,
     mdIcon: archiveSharp,
     badgeColor: 'success',
