@@ -58,8 +58,8 @@ const appPages: AppPage[] = [
     badgeValue: '1k'
   },
   {
-    title: 'Trash',
-    url: '/page/Trash',
+    title: 'Seed Phrase',
+    url: '/page/seed-phrase',
     iosIcon: trashOutline,
     mdIcon: trashSharp,
     badgeColor: 'warning',
