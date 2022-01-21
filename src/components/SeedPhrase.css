@@ -1,0 +1,20 @@
+ion-button {
+  --border-radius: 10px;
+}
+
+ion-input{
+  border: 1px solid grey !important;
+  border-radius: 8px !important;
+}
+.center{
+  text-align: center;
+}
+
+#label{
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+font-weight: 400;
+color: black;
+}

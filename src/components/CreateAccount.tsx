@@ -6,11 +6,14 @@ import {
   IonCardSubtitle,
   IonContent,
   IonFooter,
+  IonGrid,
   IonHeader,
   IonIcon,
   IonInput,
+  IonItem,
   IonLabel,
   IonPage,
+  IonRow,
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
@@ -35,7 +38,6 @@ const CreateAccount: React.FC = () => {
             </IonCardSubtitle>
           </IonCardHeader>
           <IonCardContent>
-
             <IonLabel>FullName</IonLabel>
             <IonInput placeholder='Ex. John doe' id="text" type='text'></IonInput>
             <br />

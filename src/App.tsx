@@ -26,6 +26,7 @@ import CreateAccount from './components/CreateAccount';
 import HomepageRegEmail from './components/Homepage-reg-email';
 import SecureAccount from './components/SecureAccount';
 import Verification from './components/Verification';
+import SeedPhrase from './components/SeedPhrase';
 
 setupIonicReact();
 
@@ -53,6 +54,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/page/verification" exact={true}>
               <Verification/>
+            </Route>
+            <Route path="/page/seed-phrase" exact={true}>
+              <SeedPhrase/>
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
