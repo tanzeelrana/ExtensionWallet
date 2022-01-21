@@ -1,0 +1,43 @@
+ion-button {
+  --border-radius: 10px;
+}
+input {
+  margin: 0 6px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  border: 1px solid #cfcfcf;
+  background-color: rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  
+}
+input::focus {
+  border-color: blue !important;
+}
+#label {
+  /* font-family: Manrope; */
+  font-style: normal;
+  font-weight: 420;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #414047;
+}
+#verification {
+  /* font-family: Manrope; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 19px;
+  color: #808080;
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
