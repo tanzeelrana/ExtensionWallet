@@ -42,22 +42,15 @@ const SecureAccount: React.FC = () => {
             <IonLabel>Confirm Password</IonLabel>
             <IonInput id="text" type='password'></IonInput>
             <br />
-            <div className="center">
-              <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>
+            <div  className="center">
+              <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton><br/>
+              <IonLabel id='label'>claudio@metapool.app</IonLabel>
               <br />
               <br />
               <IonLabel>By creating a NEAR account, you agree to the NEAR </IonLabel>
               <IonLabel>Wallet <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>.</IonLabel>
             </div>
           </IonCardContent>
-          <IonFooter>
-            <br />
-            <div className="center">
-              <IonLabel><b>Already have NEAR account?</b></IonLabel>
-              <IonButton id="button" size='default' color='dark'>Log in with NEAR<IonIcon icon={arrowForward} slot="end" /></IonButton>
-            </div>
-            <br />
-          </IonFooter>
         </IonCard>
       </IonContent>
     </IonPage >
