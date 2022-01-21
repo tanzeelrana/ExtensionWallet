@@ -17,8 +17,8 @@ import './Menu.css';
 
 interface AppPage {
   url: string;
-  iosIcon: string;
-  mdIcon: string;
+  iosIcon?: string;
+  mdIcon?: string;
   title: string;
   badgeColor?: string;
   badgeValue?: string;
@@ -26,52 +26,32 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
+    title: 'Home',
+    url: '/page/home'
+  },
+  {
     title: 'Create Account',
     url: '/page/create-account',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp,
-    badgeColor: 'primary',
-    badgeValue: '1k'
   },
   {
     title: 'Homepage Reg Email',
-    url: '/page/homepage-reg-email',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp,
-    badgeColor: 'secondary',
-    badgeValue: '2k'
+    url: '/page/homepage-reg-email'
   },
   {
     title: 'Secure Account',
-    url: '/page/secure-account',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp,
-    badgeColor: 'tertiary',
-    badgeValue: '5k'
+    url: '/page/secure-account'
   },
   {
     title: 'Verification',
-    url: '/page/verification',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp,
-    badgeColor: 'success',
-    badgeValue: '1k'
+    url: '/page/verification'
   },
   {
     title: 'Seed Phrase',
-    url: '/page/seed-phrase',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp,
-    badgeColor: 'warning',
-    badgeValue: '50k'
+    url: '/page/seed-phrase'
   },
   {
     title: 'Spam',
-    url: '/page/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp,
-    badgeColor: 'danger',
-    badgeValue: '100k'
+    url: '/page/Spam'
   }
 ];
 

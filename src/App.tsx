@@ -27,6 +27,7 @@ import HomepageRegEmail from './components/Homepage-reg-email';
 import SecureAccount from './components/SecureAccount';
 import Verification from './components/Verification';
 import SeedPhrase from './components/SeedPhrase';
+import Home from './components/Home';
 
 setupIonicReact();
 
@@ -38,7 +39,10 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/page/Inbox" />
+              <Redirect to="/page/home" />
+            </Route>
+            <Route path="/page/home" exact={true}>
+              <Home/>
             </Route>
             <Route path="/page/:name" exact={true}>
               <HomepageRegEmail/>
