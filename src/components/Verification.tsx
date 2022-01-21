@@ -18,7 +18,7 @@ import { arrowForward, closeCircleSharp, } from 'ionicons/icons';
 import './Verification.css';
 
 const Verification: React.FC = () => {
-
+  var isPhone = true;
   return (
     <IonPage>
       <IonHeader translucent>
@@ -32,9 +32,9 @@ const Verification: React.FC = () => {
           <IonCardHeader>
             <IonCardSubtitle>
               <div id="label">
-                <IonLabel >We've sent a 6-digit verification code to your</IonLabel><br />
-                <IonLabel >phone</IonLabel><br />
-                <IonLabel><a href="/">+1 4747948894</a></IonLabel>
+                <IonLabel  >We've sent a 6-digit verification code to your</IonLabel><br />
+                {isPhone && <><IonLabel>phone</IonLabel><br /><IonLabel><a href=".">+1 4747948894</a></IonLabel></>}
+                {!isPhone && <><IonLabel>email address</IonLabel><br /><IonLabel><a href=".">johndoe@gmail.com</a></IonLabel></>}
               </div>
             </IonCardSubtitle>
           </IonCardHeader>
