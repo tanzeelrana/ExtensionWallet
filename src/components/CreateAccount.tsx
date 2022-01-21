@@ -5,6 +5,7 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonContent,
+  IonFooter,
   IonHeader,
   IonIcon,
   IonInput,
@@ -52,7 +53,19 @@ const CreateAccount: React.FC = () => {
             <div className="d-flex justify-content-center">
               <IonLabel>Wallet <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>.</IonLabel>
             </div>
+
           </IonCardContent>
+          <IonFooter>
+            <br />
+            <div className="d-flex justify-content-center">
+              <IonLabel><b>Already have NEAR account?</b></IonLabel>
+            </div>
+
+            <div className="d-flex justify-content-center">
+              <IonButton id="button" size='default' color='dark'>Log in with NEAR<IonIcon icon={arrowForward} slot="end" /></IonButton>
+            </div>
+            <br />
+          </IonFooter>
         </IonCard>
       </IonContent>
     </IonPage >
