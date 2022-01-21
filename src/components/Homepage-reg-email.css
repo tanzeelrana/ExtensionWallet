@@ -1,0 +1,12 @@
+ion-input{
+    border: 1px solid grey !important;
+    border-radius: 8px !important;
+  }
+  .center-button {
+    text-align:center;
+    padding-top: 5%;
+  }
+  .horizontal-line{
+      border-top: 1px solid gray;
+      margin: 5%;
+  }
