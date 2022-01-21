@@ -6,7 +6,16 @@ ion-input{
     text-align:center;
     padding-top: 5%;
   }
-  .horizontal-line{
+  .horizontal-line {
       border-top: 1px solid gray;
       margin: 5%;
+  }
+  .password-div {
+    padding: 10%
+  }
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
   }

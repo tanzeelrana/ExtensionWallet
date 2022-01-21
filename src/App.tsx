@@ -32,7 +32,7 @@ setupIonicReact();
 const App: React.FC = () => {
   return (
     <IonApp>
-      <IonReactRouter>
+      {/* <IonReactRouter>
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
@@ -56,7 +56,7 @@ const App: React.FC = () => {
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
-      </IonReactRouter>
+      </IonReactRouter> */}
     </IonApp>
   );
 };
