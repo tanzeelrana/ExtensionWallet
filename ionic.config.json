@@ -1,0 +1,7 @@
+{
+  "name": "ExtensionWallet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
