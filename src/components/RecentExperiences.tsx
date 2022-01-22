@@ -84,6 +84,85 @@ const RecentExperiences: React.FC = () => {
                         <IonSearchbar value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
                         </IonCol>
                     </IonRow>
+                    <IonRow className='center'>
+                        <IonCol>
+                        <IonList>
+                            <IonItem>
+                                <IonThumbnail slot="start">
+                                    <img src="assets/defiswaplogo.png" />
+                                </IonThumbnail>
+                                <IonLabel>
+                                    <h2>DeFi Swap</h2>
+                                    <h3>Swap your digital assets</h3>
+                                    <p>+200 Users</p>
+                                </IonLabel>
+                                <IonIcon icon={chevronForwardOutline} slot="end" />
+                            </IonItem>
+
+                            <IonItem>
+                                <IonThumbnail slot="start">
+                                    <img src="assets/docusign.png" />
+                                </IonThumbnail>
+                                <IonLabel>
+                                    <h2>Docu  sign</h2>
+                                    <h3>by johndoe.near</h3>
+                                    <p>+1K users</p>
+                                </IonLabel>
+                                <IonIcon icon={chevronForwardOutline} slot="end" />
+                            </IonItem>
+                        </IonList>
+                        </IonCol>
+                    </IonRow>
+                    <IonRow>
+                        <IonCol>
+                            <IonItem>
+                                <IonLabel>
+                                    <p>Popular Categories</p>
+                                </IonLabel>
+                                <IonIcon icon={chevronForwardOutline} slot="end" />
+                            </IonItem>
+                        </IonCol>
+                    </IonRow>
+                    <IonRow>
+                        <IonCol>
+                            <IonCard>
+                                <IonCardContent>
+                                    <IonThumbnail slot="start">
+                                        <img src="assets/Group480.png" />
+                                    </IonThumbnail>
+                                </IonCardContent>
+                            </IonCard>
+                        </IonCol>
+                        <IonCol>
+                            <IonCard>
+                                <IonCardContent>
+                                    <IonThumbnail slot="start">
+                                        <img src="assets/Group481.png" />
+                                    </IonThumbnail>
+                                </IonCardContent>
+                            </IonCard>
+                        </IonCol>
+                    </IonRow>
+                    <IonRow>
+                        <IonCol>
+                            <IonCard>
+                                <IonCardContent>
+                                    <IonThumbnail slot="start">
+                                        <img src="assets/Group482.png" />
+                                    </IonThumbnail>
+                                </IonCardContent>
+                            </IonCard>
+                        </IonCol>
+                        <IonCol>
+                            <IonCard>
+                                <IonCardContent>
+                                    <IonThumbnail slot="start">
+                                        <img src="assets/Group483.png" />
+                                    </IonThumbnail>
+                                </IonCardContent>
+                            </IonCard>
+                        </IonCol>
+                    </IonRow>
                 </IonGrid>
             </IonContent>
         </IonPage >
