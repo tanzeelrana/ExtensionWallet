@@ -28,6 +28,7 @@ import SecureAccount from './components/SecureAccount';
 import Verification from './components/Verification';
 import SeedPhrase from './components/SeedPhrase';
 import HomePage from './components/HomePage';
+import RecentExperiences from './components/RecentExperiences';
 
 setupIonicReact();
 
@@ -61,6 +62,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/page/seed-phrase" exact={true}>
               <SeedPhrase/>
+            </Route>
+            <Route path="/page/recent-experiences" exact={true}>
+              <RecentExperiences/>
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
