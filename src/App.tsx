@@ -29,6 +29,8 @@ import Verification from './components/Verification';
 import SeedPhrase from './components/SeedPhrase';
 import HomePage from './components/HomePage';
 import RecentExperiences from './components/RecentExperiences';
+import Splashscreen from './components/Splashscreen';
+import WelcomeBack from './components/WelcomeBack';
 
 setupIonicReact();
 
@@ -40,28 +42,34 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/page/Inbox" />
+              <Redirect to="/page/home-page" />
             </Route>
             <Route path="/page/:name" exact={true}>
-              <Page/>
+              <Page />
+            </Route>
+            <Route path="/page/welcome-back" exact={true}>
+              <WelcomeBack />
             </Route>
             <Route path="/page/create-account" exact={true}>
-              <CreateAccount/>
+              <CreateAccount />
             </Route>
             <Route path="/page/homepage-reg-email" exact={true}>
-              <HomepageRegEmail/>
+              <HomepageRegEmail />
+            </Route>
+            <Route path="/page/splash-screen" exact={true}>
+              <Splashscreen />
             </Route>
             <Route path="/page/home-page" exact={true}>
-              <HomePage/>
+              <HomePage />
             </Route>
             <Route path="/page/secure-account" exact={true}>
-              <SecureAccount/>
+              <SecureAccount />
             </Route>
             <Route path="/page/verification" exact={true}>
-              <Verification/>
+              <Verification />
             </Route>
             <Route path="/page/seed-phrase" exact={true}>
-              <SeedPhrase/>
+              <SeedPhrase />
             </Route>
             <Route path="/page/recent-experiences" exact={true}>
               <RecentExperiences/>

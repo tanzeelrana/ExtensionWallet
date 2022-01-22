@@ -12,7 +12,6 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -26,33 +25,41 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Home',
+    title: 'Splash Screen',
+    url: '/page/splash-screen'
+  },
+  {
+    title: 'Home Page',
     url: '/page/home-page'
   },
   {
-    title: 'Create Account',
+    title: 'Recent Experiences Page',
+    url: '/page/recent-experiences'
+  },
+  {
+    title: 'WelcomeBack Page',
+    url: '/page/welcome-back'
+  },
+  {
+    title: 'Create Account Modal',
     url: '/page/create-account',
   },
   {
-    title: 'Homepage Reg Email',
+    title: 'Homepage Reg Email Modal',
     url: '/page/homepage-reg-email'
   },
   {
-    title: 'Secure Account',
+    title: 'Secure Account Modal',
     url: '/page/secure-account'
   },
   {
-    title: 'Verification',
+    title: 'Verification Modal',
     url: '/page/verification'
   },
   {
-    title: 'Seed Phrase',
+    title: 'Seed Phrase Modal',
     url: '/page/seed-phrase'
   },
-  {
-    title: 'Spam',
-    url: '/page/Spam'
-  }
 ];
 
 const Menu: React.FC = () => {
@@ -62,8 +69,6 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
