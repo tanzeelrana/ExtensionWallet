@@ -35,9 +35,10 @@ import {
     IonTitle,
     IonToolbar,
     IonSearchbar,
+    IonItemDivider,
 } from '@ionic/react';
 
-import { arrowForward, caretDownCircleOutline, chevronDownOutline, chevronForwardCircleOutline, chevronForwardOutline, cogOutline, notificationsOutline, personCircle, search } from 'ionicons/icons';
+import { add, download, arrowForward, caretDownCircleOutline, chevronDownOutline, chevronForwardCircleOutline, chevronForwardOutline, cogOutline, notificationsOutline, personCircle, search } from 'ionicons/icons';
 import { useState } from 'react';
 import './RecentExperiences.css';
 
@@ -46,6 +47,7 @@ const RecentExperiences: React.FC = () => {
     const [isPopoverOpen, setIsPopoverOpen] = useState<boolean>(false);
 
     const [searchText, setSearchText] = useState('');
+    
 
     return (
         <IonPage>
@@ -75,8 +77,50 @@ const RecentExperiences: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonPopover isOpen={isPopoverOpen}>
-
+            <IonPopover trigger="alignment-button"  isOpen={isPopoverOpen}>
+                    <IonList>
+                        <IonListHeader>My Accounts</IonListHeader>
+                        <IonItem button>
+                            <IonAvatar>
+                                <img src="assets/Group431.png" />
+                            </IonAvatar>
+                            <IonLabel>
+                                <h2>johndoe.near</h2>
+                                <h3>0.34 NEAR</h3>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItem button>
+                            <IonAvatar>
+                                <img src="assets/Group4312.png" />
+                            </IonAvatar>
+                            <IonLabel>
+                                <h2>mike.near</h2>
+                                <h3>0.12 NEAR</h3>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItem button>
+                            <IonAvatar>
+                                <img src="assets/Group253.png" />
+                            </IonAvatar>
+                            <IonLabel>
+                                <h2>john.near</h2>
+                                <h3>2.34 NEAR</h3>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItemDivider></IonItemDivider>
+                        <IonItem button>
+                            <IonIcon icon={add}></IonIcon>
+                            <IonLabel>
+                                <h2>Create Account</h2>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItem button>
+                            <IonIcon icon={download}></IonIcon>
+                            <IonLabel>
+                                <h2>Import Account</h2>
+                            </IonLabel>
+                        </IonItem>
+                    </IonList>
                 </IonPopover>
                 <IonGrid>
                     <IonRow className='center'>
@@ -130,6 +174,12 @@ const RecentExperiences: React.FC = () => {
                                     <IonThumbnail slot="start">
                                         <img src="assets/Group480.png" />
                                     </IonThumbnail>
+                                    <IonItem>
+                                        <IonLabel>
+                                            <p>Exchanges</p>
+                                        </IonLabel>
+                                        <IonIcon icon={chevronForwardOutline} slot="end" />
+                                    </IonItem>
                                 </IonCardContent>
                             </IonCard>
                         </IonCol>
@@ -139,6 +189,12 @@ const RecentExperiences: React.FC = () => {
                                     <IonThumbnail slot="start">
                                         <img src="assets/Group481.png" />
                                     </IonThumbnail>
+                                    <IonItem>
+                                        <IonLabel>
+                                            <p>Games</p>
+                                        </IonLabel>
+                                        <IonIcon icon={chevronForwardOutline} slot="end" />
+                                    </IonItem>
                                 </IonCardContent>
                             </IonCard>
                         </IonCol>
@@ -150,6 +206,12 @@ const RecentExperiences: React.FC = () => {
                                     <IonThumbnail slot="start">
                                         <img src="assets/Group482.png" />
                                     </IonThumbnail>
+                                    <IonItem>
+                                        <IonLabel>
+                                            <p>Marketpllaces</p>
+                                        </IonLabel>
+                                        <IonIcon icon={chevronForwardOutline} slot="end" />
+                                    </IonItem>
                                 </IonCardContent>
                             </IonCard>
                         </IonCol>
@@ -159,6 +221,12 @@ const RecentExperiences: React.FC = () => {
                                     <IonThumbnail slot="start">
                                         <img src="assets/Group483.png" />
                                     </IonThumbnail>
+                                    <IonItem>
+                                        <IonLabel>
+                                            <p>Defi</p>
+                                        </IonLabel>
+                                        <IonIcon icon={chevronForwardOutline} slot="end" />
+                                    </IonItem>
                                 </IonCardContent>
                             </IonCard>
                         </IonCol>
