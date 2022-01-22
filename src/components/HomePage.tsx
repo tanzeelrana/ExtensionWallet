@@ -16,6 +16,7 @@ import {
     IonImg,
     IonInput,
     IonItem,
+    IonItemDivider,
     IonLabel,
     IonList,
     IonListHeader,
@@ -36,7 +37,7 @@ import {
     IonToolbar,
 } from '@ionic/react';
 
-import { arrowForward, caretDownCircleOutline, chevronDownOutline, chevronForwardCircleOutline, chevronForwardOutline, cogOutline, notificationsOutline, personCircle, search } from 'ionicons/icons';
+import { add, arrowForward, caretDownCircleOutline, chevronDownOutline, chevronForwardCircleOutline, chevronForwardOutline, cogOutline, download, notificationsOutline, personCircle, pulse, search } from 'ionicons/icons';
 import { useState } from 'react';
 import './HomePage.css';
 
@@ -62,7 +63,7 @@ const HomePage: React.FC = () => {
                         </IonButton>
                     </IonButtons>
                     <div className='center'>
-                        <IonButton color='dark' fill='outline'>
+                        <IonButton id="alignment-button" onClick={() => setIsPopoverOpen(!isPopoverOpen)} color='dark' fill='outline'>
                             <img src="assets/Group431.png" />
                             &nbsp;
                             Johndoe.near
@@ -72,8 +73,50 @@ const HomePage: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonPopover isOpen={isPopoverOpen}>
-
+                <IonPopover trigger="alignment-button"  isOpen={isPopoverOpen}>
+                    <IonList>
+                        <IonListHeader>My Accounts</IonListHeader>
+                        <IonItem button>
+                            <IonAvatar>
+                                <img src="assets/Group431.png" />
+                            </IonAvatar>
+                            <IonLabel>
+                                <h2>johndoe.near</h2>
+                                <h3>0.34 NEAR</h3>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItem button>
+                            <IonAvatar>
+                                <img src="assets/Group4312.png" />
+                            </IonAvatar>
+                            <IonLabel>
+                                <h2>mike.near</h2>
+                                <h3>0.12 NEAR</h3>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItem button>
+                            <IonAvatar>
+                                <img src="assets/Group253.png" />
+                            </IonAvatar>
+                            <IonLabel>
+                                <h2>john.near</h2>
+                                <h3>2.34 NEAR</h3>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItemDivider></IonItemDivider>
+                        <IonItem button>
+                            <IonIcon icon={add}></IonIcon>
+                            <IonLabel>
+                                <h2>Create Account</h2>
+                            </IonLabel>
+                        </IonItem>
+                        <IonItem button>
+                            <IonIcon icon={download}></IonIcon>
+                            <IonLabel>
+                                <h2>Import Account</h2>
+                            </IonLabel>
+                        </IonItem>
+                    </IonList>
                 </IonPopover>
                 <IonGrid>
                     <IonRow>
