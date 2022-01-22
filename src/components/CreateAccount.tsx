@@ -6,19 +6,16 @@ import {
   IonCardSubtitle,
   IonContent,
   IonFooter,
-  IonGrid,
   IonHeader,
   IonIcon,
   IonInput,
-  IonItem,
   IonLabel,
   IonPage,
-  IonRow,
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
 
-import { arrowForward, closeCircleSharp, } from 'ionicons/icons';
+import { alertCircleSharp, arrowForward, closeCircleSharp, } from 'ionicons/icons';
 import './CreateAccount.css';
 
 const CreateAccount: React.FC = () => {
@@ -41,7 +38,7 @@ const CreateAccount: React.FC = () => {
             <IonLabel>FullName</IonLabel>
             <IonInput placeholder='Ex. John doe' id="text" type='text'></IonInput>
             <br />
-            <IonLabel>Account ID</IonLabel>
+            <IonLabel>Account ID <IonIcon slot='end' icon={alertCircleSharp}></IonIcon></IonLabel>
             <IonInput placeholder="yourname" id="text" type='text'>
               <IonLabel id="addon" slot='end'>.near</IonLabel></IonInput>
             <br />
@@ -49,7 +46,7 @@ const CreateAccount: React.FC = () => {
               <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>
               <br />
               <br />
-              <IonLabel>By creating a NEAR account, you agree to the NEAR </IonLabel>
+              <IonLabel>By creating a NEAR account, you agree to the NEAR </IonLabel><br />
               <IonLabel>Wallet <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>.</IonLabel>
             </div>
           </IonCardContent>
