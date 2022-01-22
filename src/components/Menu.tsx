@@ -27,7 +27,7 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '/page/home'
+    url: '/page/home-page'
   },
   {
     title: 'Create Account',
