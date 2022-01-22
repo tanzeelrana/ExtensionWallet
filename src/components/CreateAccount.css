@@ -2,10 +2,23 @@ ion-button {
   --border-radius: 10px;
 }
 
-ion-input{
-  border: 1px solid grey !important;
-  border-radius: 8px !important;
+ion-input {
+  border: 1px solid grey;
+  border-radius: 8px;
 }
-.center{
+.center {
   text-align: center;
+}
+
+#addon {
+  border-left: 1px solid black;
+  order: 1;
+  width: 20%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 350%;
+  background-color: #FCFCFC;
+  border-end-end-radius: 8px;
+  border-top-right-radius: 8px;
 }

@@ -42,7 +42,8 @@ const CreateAccount: React.FC = () => {
             <IonInput placeholder='Ex. John doe' id="text" type='text'></IonInput>
             <br />
             <IonLabel>Account ID</IonLabel>
-            <IonInput placeholder="yourname" id="text" type='text'></IonInput>
+            <IonInput placeholder="yourname" id="text" type='text'>
+              <IonLabel id="addon" slot='end'>.near</IonLabel></IonInput>
             <br />
             <div className="center">
               <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>
@@ -55,7 +56,7 @@ const CreateAccount: React.FC = () => {
           <IonFooter>
             <br />
             <div className="center">
-              <IonLabel><b>Already have NEAR account?</b></IonLabel>
+              <IonLabel><b>Already have NEAR account?</b></IonLabel><br />
               <IonButton id="button" size='default' color='dark'>Log in with NEAR<IonIcon icon={arrowForward} slot="end" /></IonButton>
             </div>
             <br />
