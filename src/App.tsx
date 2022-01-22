@@ -29,6 +29,8 @@ import Verification from './components/Verification';
 import SeedPhrase from './components/SeedPhrase';
 import HomePage from './components/HomePage';
 import RecentExperiences from './components/RecentExperiences';
+import Splashscreen from './components/Splashscreen';
+import WelcomeBack from './components/WelcomeBack';
 
 setupIonicReact();
 
@@ -45,11 +47,17 @@ const App: React.FC = () => {
             <Route path="/page/:name" exact={true}>
               <Page />
             </Route>
+            <Route path="/page/welcome-back" exact={true}>
+              <WelcomeBack />
+            </Route>
             <Route path="/page/create-account" exact={true}>
               <CreateAccount />
             </Route>
             <Route path="/page/homepage-reg-email" exact={true}>
               <HomepageRegEmail />
+            </Route>
+            <Route path="/page/splash-screen" exact={true}>
+              <Splashscreen />
             </Route>
             <Route path="/page/home-page" exact={true}>
               <HomePage />

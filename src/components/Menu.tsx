@@ -25,12 +25,20 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
+    title: 'Splash Screen',
+    url: '/page/splash-screen'
+  },
+  {
     title: 'Home Page',
     url: '/page/home-page'
   },
   {
     title: 'Recent Experiences Page',
     url: '/page/recent-experiences'
+  },
+  {
+    title: 'WelcomeBack Page',
+    url: '/page/welcome-back'
   },
   {
     title: 'Create Account Modal',
