@@ -21,6 +21,7 @@ import {
     IonListHeader,
     IonNote,
     IonPage,
+    IonPopover,
     IonRouterLink,
     IonRow,
     IonSegment,
@@ -35,21 +36,22 @@ import {
     IonToolbar,
 } from '@ionic/react';
 
-import { arrowForward, caretDownCircleOutline, chevronForwardCircleOutline, chevronForwardOutline, cogOutline, notificationsOutline, personCircle, search } from 'ionicons/icons';
+import { arrowForward, caretDownCircleOutline, chevronDownOutline, chevronForwardCircleOutline, chevronForwardOutline, cogOutline, notificationsOutline, personCircle, search } from 'ionicons/icons';
 import { useState } from 'react';
 import './HomePage.css';
 
 const HomePage: React.FC = () => {
+
+    const [isPopoverOpen, setIsPopoverOpen] = useState<boolean>(false);
+
     return (
         <IonPage>
             <IonHeader>
                 <IonToolbar >
                     <IonButtons slot="secondary">
-                        <IonButton>
-                            <IonThumbnail>
-                                <img src="assets/Group397.png" />
-                            </IonThumbnail>
-                        </IonButton>
+                        <IonThumbnail>
+                            <img src="assets/Group397.png" />
+                        </IonThumbnail>
                     </IonButtons>
                     <IonButtons slot="primary">
                         <IonButton>
@@ -59,14 +61,20 @@ const HomePage: React.FC = () => {
                             <IonIcon slot="icon-only" icon={cogOutline} />
                         </IonButton>
                     </IonButtons>
-                    <IonChip outline color="dark">
-                        <IonIcon icon={cogOutline}></IonIcon>
-                        <IonLabel>JohnDoe.near</IonLabel>
-                        <IonIcon icon={caretDownCircleOutline}></IonIcon>
-                    </IonChip>
+                    <div className='center'>
+                        <IonButton color='dark' fill='outline'>
+                            <img src="assets/Group431.png" />
+                            &nbsp;
+                            Johndoe.near
+                            <IonIcon icon={chevronDownOutline} slot="end" />
+                        </IonButton>
+                    </div>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
+                <IonPopover isOpen={isPopoverOpen}>
+
+                </IonPopover>
                 <IonGrid>
                     <IonRow>
                         <IonCol>

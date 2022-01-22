@@ -45,17 +45,15 @@ const Verification: React.FC = () => {
             <div id="verification" className='mb-2'>
               <IonLabel>Enter verification code</IonLabel>
             </div>
-            
-              <IonGrid>
-                <IonRow>
-                    <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                    <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                    <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                    <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                    <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                    <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
-                </IonRow>
-              </IonGrid>
+
+            <IonGrid className="center">
+              <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
+              <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
+              <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
+              <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
+              <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
+              <input type="text" maxLength={1} size={1} min={0} max={9} pattern="[0-9]{1}" />
+            </IonGrid>
             <br />
             <div className="center">
               <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>
