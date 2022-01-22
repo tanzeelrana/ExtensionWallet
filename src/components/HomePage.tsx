@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
                         </IonButton>
                     </IonButtons>
                     <div className='center'>
-                        <IonButton color='dark' fill='outline'>
+                        <IonButton id="alignment-button" onClick={() => setIsPopoverOpen(!isPopoverOpen)} color='dark' fill='outline'>
                             <img src="assets/Group431.png" />
                             &nbsp;
                             Johndoe.near
@@ -72,8 +72,13 @@ const HomePage: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonPopover isOpen={isPopoverOpen}>
-
+                <IonPopover trigger="alignment-button"  isOpen={isPopoverOpen}>
+                    <IonList>
+                        <IonListHeader>My Accounts</IonListHeader>
+                        <IonItem button>Documentation</IonItem>
+                        <IonItem button>Showcase</IonItem>
+                        <IonItem lines="none" detail={false} onClick={() => setIsPopoverOpen(!isPopoverOpen)} button>Close</IonItem>
+                    </IonList>
                 </IonPopover>
                 <IonGrid>
                     <IonRow>
