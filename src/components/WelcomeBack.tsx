@@ -16,11 +16,12 @@ const WelcomeBack: React.FC = () => {
 
         <IonPage>
             <IonHeader>
+                <div>
+                    <IonImg src="assets/welcomeBackImg.png" style={{opacity: "70%"}}></IonImg>
+                    <div className='container'>
+                        <IonImg src="assets/HomepageHeader.png" style={{opacity: "100%", width: "30%"}}></IonImg>
+                    </div>
                 <div className='center-image'>
-                <IonImg src="assets/welcomeBackImg.png" style={{opacity: "70%"}}>
-                </IonImg>
-                <div className='center-image'>
-                <IonImg src="assets/HomepageHeader.png" style={{opacity: "100%", width: "30%"}}></IonImg>
                 </div>
                 <IonLabel className="center-button" color='dark'><h3>a web3 gateway to hidden experiences</h3></IonLabel>
                 </div>
