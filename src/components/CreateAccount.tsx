@@ -46,7 +46,7 @@ const CreateAccount: React.FC = () => {
               <IonButton size='default' color='medium'>Continue<IonIcon icon={arrowForward} slot="end" /></IonButton>
               <br />
               <br />
-              <IonLabel>By creating a NEAR account, you agree to the NEAR </IonLabel>
+              <IonLabel>By creating a NEAR account, you agree to the NEAR </IonLabel><br />
               <IonLabel>Wallet <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>.</IonLabel>
             </div>
           </IonCardContent>
