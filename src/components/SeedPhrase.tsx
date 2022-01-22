@@ -8,6 +8,7 @@ import {
   IonChip,
   IonCol,
   IonContent,
+  IonGrid,
   IonHeader,
   IonIcon,
   IonInput,
@@ -26,8 +27,8 @@ const SeedPhrase: React.FC = () => {
 
   return (
     <IonPage className="center">
-      <IonHeader>
-        <IonToolbar >
+      <IonHeader className="center">
+        <IonToolbar className="center">
           <IonTitle className="center" >Secure your account</IonTitle>
           <IonIcon size='large' slot='end' icon={closeCircleSharp}></IonIcon>
         </IonToolbar>
@@ -42,58 +43,61 @@ const SeedPhrase: React.FC = () => {
             <h2>Seed Phrase</h2>
           </IonCol>
         </IonRow>
-        <IonRow className="center">
-          <IonCard>
-            <IonChip>
-              <IonBadge color='light'>1</IonBadge>
-              <IonLabel> &nbsp; gather</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>2</IonBadge>
-              <IonLabel> &nbsp; engage</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>3</IonBadge>
-              <IonLabel> &nbsp; father</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>4</IonBadge>
-              <IonLabel> &nbsp; plant</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>5</IonBadge>
-              <IonLabel> &nbsp; indego</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>6</IonBadge>
-              <IonLabel> &nbsp; dental</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>7</IonBadge>
-              <IonLabel> &nbsp; sick</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>8</IonBadge>
-              <IonLabel> &nbsp; fungus</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>9</IonBadge>
-              <IonLabel> &nbsp; river</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>10</IonBadge>
-              <IonLabel> &nbsp; morning</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>11</IonBadge>
-              <IonLabel> &nbsp; love</IonLabel>
-            </IonChip>
-            <IonChip>
-              <IonBadge color='light'>12</IonBadge>
-              <IonLabel> &nbsp; cow</IonLabel>
-            </IonChip>
-          </IonCard>
-        </IonRow>
+        <IonGrid className="center" style={{ "display": "inline-grid" }}>
+          <IonRow className="center">
+            <IonCard>
+              <IonChip>
+                <IonBadge color='light'>1</IonBadge>
+                <IonLabel> &nbsp; gather</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>2</IonBadge>
+                <IonLabel> &nbsp; engage</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>3</IonBadge>
+                <IonLabel> &nbsp; father</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>4</IonBadge>
+                <IonLabel> &nbsp; plant</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>5</IonBadge>
+                <IonLabel> &nbsp; indego</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>6</IonBadge>
+                <IonLabel> &nbsp; dental</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>7</IonBadge>
+                <IonLabel> &nbsp; sick</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>8</IonBadge>
+                <IonLabel> &nbsp; fungus</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>9</IonBadge>
+                <IonLabel> &nbsp; river</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>10</IonBadge>
+                <IonLabel> &nbsp; morning</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>11</IonBadge>
+                <IonLabel> &nbsp; love</IonLabel>
+              </IonChip>
+              <IonChip>
+                <IonBadge color='light'>12</IonBadge>
+                <IonLabel> &nbsp; cow</IonLabel>
+              </IonChip>
+            </IonCard>
+          </IonRow>
+        </IonGrid>
+
 
         <IonRow className="center">
           <IonCol>
