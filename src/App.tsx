@@ -39,28 +39,28 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/page/Inbox" />
+              <Redirect to="/page/home-page" />
             </Route>
             <Route path="/page/:name" exact={true}>
-              <Page/>
+              <Page />
             </Route>
             <Route path="/page/create-account" exact={true}>
-              <CreateAccount/>
+              <CreateAccount />
             </Route>
             <Route path="/page/homepage-reg-email" exact={true}>
-              <HomepageRegEmail/>
+              <HomepageRegEmail />
             </Route>
             <Route path="/page/home-page" exact={true}>
-              <HomePage/>
+              <HomePage />
             </Route>
             <Route path="/page/secure-account" exact={true}>
-              <SecureAccount/>
+              <SecureAccount />
             </Route>
             <Route path="/page/verification" exact={true}>
-              <Verification/>
+              <Verification />
             </Route>
             <Route path="/page/seed-phrase" exact={true}>
-              <SeedPhrase/>
+              <SeedPhrase />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
